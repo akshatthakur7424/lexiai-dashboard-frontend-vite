@@ -1,12 +1,15 @@
 import React from "react";
-import LeftSlideBar from "./LeftSlideBar";
+// import LeftSlideBar from "./LeftSlideBar";
+import LeftSlideBar from "./_LeftSlideBar";
 
 const MainScreen = ({ children }) => {
   return (
     <>
       <div className="h-svh w-svw flex items-center justify-start bg-white">
-        <div className="h-full" ><LeftSlideBar/></div>
-        <div className="w-svw h-svh" >{children}</div>
+        <div className="h-full">
+          <LeftSlideBar />
+        </div>
+        <div className="w-svw h-svh">{children}</div>
       </div>
     </>
   );
